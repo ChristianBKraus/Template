@@ -1,0 +1,26 @@
+# application.yml
+
+application:
+    name: weather
+    description: Weather Controller for Planer
+    version: 1.0.0  
+    userPassword: password
+    adminPassword: password          
+
+server:
+    port: 9989
+management:
+    port: 8989
+
+clients:
+    - name: ledStrip
+      host: localhost
+      port: 9000
+
+endpoints:
+    sensitive: false
+    enabled: true
+    health:
+        sensitive: false
+management.security.enabled: false 
+    
