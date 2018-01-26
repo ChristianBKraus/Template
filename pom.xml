@@ -4,7 +4,7 @@
 	
 	<groupId>jupiterpa</groupId>
 	<artifactId>template</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.9.1-SNAPSHOT</version>
 
 	<parent>
 		<!-- Your own application should inherit from spring-boot-starter-parent -->
