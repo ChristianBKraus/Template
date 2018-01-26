@@ -1,8 +1,8 @@
 # application.yml
 
 application:
-    name: weather
-    description: Weather Controller for Planer
+    name: template
+    description: Template Service
     version: 1.0.0  
     userPassword: password
     adminPassword: password          
@@ -24,3 +24,18 @@ endpoints:
         sensitive: false
 management.security.enabled: false 
     
+spring:
+    data:
+        mongodb:
+            host: 127.0.0.1
+            port: 27017
+            database: template
+    
+---    
+spring:
+    profiles: test
+    data:
+        mongodb:
+            host: 127.0.0.1
+            port: 27017
+            database: template_test    
