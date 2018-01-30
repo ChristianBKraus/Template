@@ -9,7 +9,6 @@ import jupiterpa.template.domain.model.TemplateEntityRepo;
 @Service
 public class TemplateService {
 	
-	@Autowired Transformer transformer;
 	@Autowired TemplateEntityRepo repo;
 	
 	public void store(TemplateEntity entity) {

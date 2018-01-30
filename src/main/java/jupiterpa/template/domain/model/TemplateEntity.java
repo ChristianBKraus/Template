@@ -9,6 +9,8 @@ public class TemplateEntity {
 	
 	String value;
 	
+	public TemplateEntity() {}
+	
 	public TemplateEntity(String value) {
 		this.value = value;
 	}
