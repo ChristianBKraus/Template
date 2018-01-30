@@ -2,7 +2,7 @@
 
 application:
     name: template
-    description: Template Service
+    description: Template
     version: 1.0.0  
     userPassword: password
     adminPassword: password          
@@ -29,7 +29,7 @@ spring:
         mongodb:
             host: 127.0.0.1
             port: 27017
-            database: template
+            database: weather
     
 ---    
 spring:
@@ -38,4 +38,4 @@ spring:
         mongodb:
             host: 127.0.0.1
             port: 27017
-            database: template_test    
+            database: weather_test    
