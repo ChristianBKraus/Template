@@ -20,7 +20,7 @@ public class TemplateClientImpl extends ClientBase<TemplateEntity> implements Te
 	
 	@HystrixCommand(fallbackMethod = "defaultSet")
 	public void set(TemplateEntity entity) {
-		put("ledStrip","/ledstrip",entity);
+		post("templateClient","/",entity);
 	}
 	
 	public void defaultSet(TemplateEntity entity) {

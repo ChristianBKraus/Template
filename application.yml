@@ -13,7 +13,7 @@ management:
     port: 8989
 
 clients:
-    - name: ledStrip
+    - name: templateClient
       host: localhost
       port: 9000
 

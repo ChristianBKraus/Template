@@ -15,7 +15,7 @@ import jupiterpa.template.domain.service.*;
 
 @RequestMapping(path = Controller.PATH)
 @RestController
-@Api(value="template controller", description="Template Controller")
+@Api(value="template", description="Template Controller")
 public class Controller {
     public static final String PATH ="/template";
     
