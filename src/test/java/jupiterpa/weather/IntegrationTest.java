@@ -65,7 +65,7 @@ public class IntegrationTest {
         .andExpect(jsonPath("$.value").value("TestingT"));
     	
 //      Get
-    	mockMvc.perform( get(PATH ))
+    	mockMvc.perform( get(PATH) )
         .andExpect(status().isOk())
 		.andExpect(content().contentType(APPLICATION_JSON_UTF8))
         .andExpect(jsonPath("$.value").value("TestingT"));

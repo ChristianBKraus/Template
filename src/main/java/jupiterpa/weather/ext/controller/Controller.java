@@ -17,7 +17,7 @@ import jupiterpa.weather.domain.service.*;
 @RestController
 @Api(value="weather", description="Weather Adapter")
 public class Controller {
-    public static final String PATH ="/weather";
+    public static final String PATH ="/template";
     
     @Autowired TemplateRepo repo;
     @Autowired TemplateService service;
