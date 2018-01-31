@@ -2,7 +2,9 @@ package jupiterpa.weather.ext.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,36 +19,25 @@ import jupiterpa.weather.domain.service.*;
 public class Controller {
     public static final String PATH ="/weather";
     
-    @Autowired WeatherRepo weatherRepo;
-    @Autowired DaylightRepo daylightRepo;
-    @Autowired WeatherService service;
+    @Autowired TemplateRepo repo;
+    @Autowired TemplateService service;
     
     @GetMapping("")
-    @ApiOperation(value = "View todays Weather", response = Weather.class)
+    @ApiOperation(value = "GET first Entity", response = TemplateEntity.class)
     @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "Successfully retrieved Weather")
+        @ApiResponse(code = 200, message = "Successfully retrieved Entity")
     })
-    public Weather get() {  
-    	return weatherRepo.findAll().get(0);
+    public TemplateEntity get() {  
+    	return repo.findAll().get(0);
     }
     
-    @GetMapping("/daylight")
-    @ApiOperation(value = "View todays Sunrise and Sunset", response = Daylight.class)
+    @PostMapping("")
+    @ApiOperation(value = "Create new Entity")
     @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "Successfully retrieved Daylight Hours")
+        @ApiResponse(code = 200, message = "Created Successfully")
     })
-    public Daylight getdaylight() {  
-    	return daylightRepo.findAll().get(0);
-    }
-    
-    @PutMapping("/update")
-    @ApiOperation(value = "Trigger an update of buffered information")
-    @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "Updated Successfully")
-    })
-    public void update() {
-    	service.updateWeather();
-    	service.updateDaylight();
+    public TemplateEntity post(@RequestBody TemplateEntity entity) {
+    	return service.create(entity);
     }
 
 }
