@@ -4,7 +4,7 @@
 	
 	<groupId>jupiterpa</groupId>
 	<artifactId>template</artifactId>
-	<version>0.9.4-SNAPSHOT</version>
+	<version>0.9.5-SNAPSHOT</version>
 
 	<parent>
 		<!-- Your own application should inherit from spring-boot-starter-parent -->
@@ -20,11 +20,10 @@
     </properties>	
 
 	<dependencies>
-
-		<!-- Spring Boot Starter - Web -->	
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>jupiterpa</groupId>
+			<artifactId>SDK</artifactId>
+			<version>0.9.5-SNAPSHOT</version>
 		</dependency>
 		
 		<!--  Spring Boot Starter - Test -->
@@ -33,36 +32,18 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        
-		<!-- Spring Boot Starter - MONGO DB -->
-		<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
-		        
-        <!-- Spring Boot Starter - Hystrix -->
-        <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-hystrix</artifactId>
-		</dependency>
-		
-		<!-- Spring Boot Starter - Actuator -->
-		<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-		
-		<!-- Spring Boot Starter - Security -->
-		<dependency>
-        	<groupId>org.springframework.boot</groupId>
-        	<artifactId>spring-boot-starter-security</artifactId>
-    	</dependency>
 		<dependency>
         	<groupId>org.springframework.security</groupId>
         	<artifactId>spring-security-test</artifactId>
         	<scope>test</scope>
     	</dependency>
-    
+		
+		<!-- Spring Boot Starter - MONGO DB -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
 		<!-- Swagger -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -76,7 +57,7 @@
 			<version>2.7.0</version>
 			<scope>compile</scope>
 		</dependency>
-        
+		
     </dependencies>
     
     <dependencyManagement>
