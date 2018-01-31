@@ -1,4 +1,4 @@
-package jupiterpa.weather.ext.controller;
+package jupiterpa.weather.intf.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +15,7 @@ import jupiterpa.weather.domain.service.*;
 
 @RequestMapping(path = Controller.PATH)
 @RestController
-@Api(value="weather", description="Weather Adapter")
+@Api(value="template controller", description="Template Controller")
 public class Controller {
     public static final String PATH ="/template";
     

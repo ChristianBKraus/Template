@@ -1,8 +1,8 @@
 # application.yml
 
 application:
-    name: template
-    description: Template
+    name: weather
+    description: Template for Service
     version: 1.0.0  
     userPassword: password
     adminPassword: password          

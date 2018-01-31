@@ -30,7 +30,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jupiterpa.weather.client.ClientMocking;
 import jupiterpa.weather.domain.client.*;
 import jupiterpa.weather.domain.model.*;
-import jupiterpa.weather.ext.controller.Controller;
+import jupiterpa.weather.intf.controller.Controller;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

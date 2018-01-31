@@ -1,4 +1,4 @@
-package jupiterpa.weather.ext.controller;
+package jupiterpa.weather.intf.controller;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

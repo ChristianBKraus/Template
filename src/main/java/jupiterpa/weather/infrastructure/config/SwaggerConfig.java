@@ -21,6 +21,7 @@ public class SwaggerConfig {
     @Bean
     public Docket productApi() {
     	String basePackage = "jupiterpa." + appl.getName() + ".intf.controller";
+    	System.out.println("Basepackage = " + basePackage);
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage(basePackage))
