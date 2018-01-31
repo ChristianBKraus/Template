@@ -8,9 +8,9 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
+import jupiterpa.infrastructure.client.ClientBase;
 import jupiterpa.template.domain.client.TemplateClient;
 import jupiterpa.template.domain.model.*;
-import jupiterpa.template.infrastructure.client.ClientBase;
 
 @Component
 @Profile("default")

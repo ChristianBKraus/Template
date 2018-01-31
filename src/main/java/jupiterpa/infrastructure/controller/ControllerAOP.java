@@ -1,4 +1,4 @@
-package jupiterpa.template.infrastructure.controller;
+package jupiterpa.infrastructure.controller;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Component;
 
-import jupiterpa.template.infrastructure.client.HttpContext;
+import jupiterpa.infrastructure.client.HttpContext;
 
 @Aspect
 @Component

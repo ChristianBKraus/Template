@@ -1,4 +1,4 @@
-package jupiterpa.template.infrastructure.config;
+package jupiterpa.infrastructure.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

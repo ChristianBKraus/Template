@@ -1,4 +1,4 @@
-package jupiterpa.template.infrastructure.actuator;
+package jupiterpa.infrastructure.actuator;
 
 public class HealthInfo {
 	String name;

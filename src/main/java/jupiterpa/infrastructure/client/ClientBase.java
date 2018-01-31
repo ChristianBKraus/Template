@@ -1,4 +1,4 @@
-package jupiterpa.template.infrastructure.client;
+package jupiterpa.infrastructure.client;
 
 import java.net.URI;
 import org.slf4j.Logger;
@@ -12,8 +12,8 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import jupiterpa.template.infrastructure.client.ClientConfig.ClientConfigEntry;
-import jupiterpa.template.infrastructure.config.ApplicationConfig;
+import jupiterpa.infrastructure.client.ClientConfig.ClientConfigEntry;
+import jupiterpa.infrastructure.config.ApplicationConfig;
 
 public class ClientBase<Entity> {
 

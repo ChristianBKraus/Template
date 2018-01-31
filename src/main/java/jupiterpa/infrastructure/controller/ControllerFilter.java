@@ -1,4 +1,4 @@
-package jupiterpa.template.infrastructure.controller;
+package jupiterpa.infrastructure.controller;
 
 import java.io.IOException;
 
@@ -18,7 +18,7 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import jupiterpa.template.infrastructure.client.HttpContext;
+import jupiterpa.infrastructure.client.HttpContext;
 
 @Configuration
 public class ControllerFilter {

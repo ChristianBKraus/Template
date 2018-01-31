@@ -1,4 +1,4 @@
-package jupiterpa.template.infrastructure.client;
+package jupiterpa.infrastructure.client;
 
 import java.nio.charset.Charset;
 import java.util.UUID;

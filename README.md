@@ -1,2 +1,2 @@
-# ledstrip
-Controller for LEDStrip
+# Template Service
+Showcase how to setup a simple service. Is based on the SDK.

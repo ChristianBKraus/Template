@@ -5,9 +5,9 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import jupiterpa.infrastructure.actuator.*;
 import jupiterpa.template.domain.client.*;
 import jupiterpa.template.domain.model.*;
-import jupiterpa.template.infrastructure.actuator.*;
 
 @Service
 public class TemplateService {
