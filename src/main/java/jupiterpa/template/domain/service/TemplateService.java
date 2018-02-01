@@ -18,9 +18,18 @@ public class TemplateService {
 	InterfaceHealth health;
 
 	public TemplateEntity create(TemplateEntity entity) {
+		// Transformation
 		TemplateEntity new_entity = TemplateTransformer.transform(entity);
-		client.set(new_entity);
+		// Client Call
+		boolean success = client.set(new_entity);
+		// Update Health
+		if (success) 
+			health.setHealth(new HealthInfo("TemplateClient",true,"running"));
+		else 
+			health.setHealth(new HealthInfo("TemplateClient",false,"down"));
+		// DB save
 		repo.save(new_entity);
+		
 		return new_entity;
 	}
 }

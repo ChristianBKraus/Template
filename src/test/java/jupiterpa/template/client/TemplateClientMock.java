@@ -24,13 +24,13 @@ public class TemplateClientMock implements TemplateClient, ClientMocking {
 		return entities;
 	}
 
-	public void set(TemplateEntity entity) {
+	public boolean set(TemplateEntity entity) {
 		entities.add(entity);
+		return true;
 	}
-	@Override
-	public void defaultSet(TemplateEntity entity) {
+	public boolean defaultSet(TemplateEntity entity) {
 		// TODO Auto-generated method stub
-		
+		return false;
 	}
 
 }

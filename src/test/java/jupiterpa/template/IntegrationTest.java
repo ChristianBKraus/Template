@@ -31,10 +31,14 @@ import jupiterpa.template.intf.controller.Controller;
 public class IntegrationTest { 
 	final String PATH = Controller.PATH; 
 
-	@Autowired
-    private MockMvc mockMvc;
-	@Autowired
-	private TemplateClient client;
+	@Autowired private MockMvc mockMvc;
+	@Autowired private TemplateClient client;
+	@Autowired private TemplateRepo repo;
+	
+	@Before
+	public void ResetDB() {
+		repo.deleteAll();
+	}
 	
 	@Before
 	public void initialize() {
