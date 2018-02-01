@@ -14,7 +14,8 @@ import jupiterpa.template.domain.model.TemplateEntity;
 public class TemplateClientMock implements TemplateClient, ClientMocking {
 	
 	List<TemplateEntity> entities = new ArrayList<TemplateEntity>();
-	
+
+	// Mocking
 	@SuppressWarnings("unchecked")
 	public void inject(Object result) {
 		if (result != null)
@@ -24,6 +25,7 @@ public class TemplateClientMock implements TemplateClient, ClientMocking {
 		return entities;
 	}
 
+	// Interface
 	public boolean set(TemplateEntity entity) {
 		entities.add(entity);
 		return true;
